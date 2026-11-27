@@ -238,7 +238,50 @@ a:focus-visible, button:focus-visible {
 
 .texto-version h2 { font-size: 1.8rem; }
 
-/* ====== Pie ====== */
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.compartir span {
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+.compartir .red {
+  background: var(--blanco);
+  color: var(--tinta);
+  border: 3px solid var(--tinta);
+  padding: 2px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.compartir .red:hover {
+  background: var(--acento);
+  transform: translateY(-2px);
+}
+
+
+.comentarios {
+  max-width: 760px;
+  margin: 24px auto 0;
+  padding: 24px;
+  border-top: 4px solid var(--tinta);
+}
+
+.comentarios h2 { font-size: 1.8rem; }
+
+#disqus_thread { min-height: 120px; color: var(--gris); }
+
+
+
+
 .pie {
   margin-top: 48px;
   padding: 20px;
@@ -249,7 +292,7 @@ a:focus-visible, button:focus-visible {
 
 .pie p { margin: 0; }
 
-/* ====== Celular ====== */
+
 @media (max-width: 760px) {
   .menu-boton { display: block; }
   .menu {
@@ -260,6 +303,7 @@ a:focus-visible, button:focus-visible {
   }
   .menu.abierto { display: flex; }
   .dos-columnas { grid-template-columns: 1fr; }
+  .compartir span { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
