@@ -16,6 +16,11 @@
       <img src="imagenes/logo2.png" alt="Logo pequeño de RoTech" class="logo-pequeno">
       <span>RoTech</span>
     </a>
+    <div class="right compartir">
+      <span>Compartir:</span>
+      <a class="red" id="compartirTwitter" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener">Twitter</a>
+      <a class="red" id="compartirFacebook" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener">Facebook</a>
+    </div>
     <button class="menu-boton" id="menuBoton" aria-label="Abrir menú" aria-expanded="false">Menú</button>
     <nav class="menu" id="menu">
       <a href="index.html">Inicio</a>
@@ -25,35 +30,43 @@
   </header>
 
   <main>
-    <section class="portada">
-      <img src="imagenes\logo1.png" alt="Logo de RoTech" class="logo-grande">
-      <h1>Equipo RoTech</h1>
-      <p class="descripcion">El robot seguidor de línea de RoTech</p>
-      <h2 class="nombre-robot">Super Follower V3</h2>
+    <article>
+      <section class="portada">
+        <img src="imagenes/logo1.png" alt="Logo de RoTech" class="logo-grande">
+        <h1>Equipo RoTech</h1>
+        <p class="descripcion">El robot seguidor de línea de RoTech</p>
+        <h2 class="nombre-robot">Super Follower V3</h2>
 
-      <div class="pista" aria-hidden="true">
-        <div class="linea"></div>
-        <div class="robot-punto"></div>
-      </div>
-      <p class="lema">Avanzando lento pero seguro</p>
-    </section>
+        <div class="pista" aria-hidden="true">
+          <div class="linea"></div>
+          <div class="robot-punto"></div>
+        </div>
+        <p class="lema">Avanzando lento pero seguro</p>
+      </section>
 
-    <section class="bloque">
-      <h2>¿Qué es un seguidor de línea?</h2>
-      <p>
-        Es un robot autónomo que recorre una pista siguiendo una línea marcada en el suelo.
-        Sus sensores leen la línea miles de veces por segundo y el control corrige el
-        rumbo de los motores para mantenerse sobre ella, sin que nadie lo maneje.
-      </p>
-      <p>
-        El Super Follower V3 es la tercera versión del robot del equipo RoTech, construida
-        para competir y mejorar en cada prueba.
-      </p>
-      <div class="botones">
-        <a class="boton" href="caracteristicas.html">Ver características</a>
-        <a class="boton boton-claro" href="version4.html">Conocer la versión 4</a>
-      </div>
-    </section>
+      <section class="bloque">
+        <h2>¿Qué es un seguidor de línea?</h2>
+        <p>
+          Es un robot autónomo que recorre una pista siguiendo una línea marcada en el suelo.
+          Sus sensores leen la línea miles de veces por segundo y el control corrige el
+          rumbo de los motores para mantenerse sobre ella, sin que nadie lo maneje.
+        </p>
+        <p>
+          El Super Follower V3 es la tercera versión del robot del equipo RoTech, construida
+          para competir y mejorar en cada prueba.
+        </p>
+        <div class="botones">
+          <a class="boton" href="caracteristicas.html">Ver características</a>
+          <a class="boton boton-claro" href="version4.html">Conocer la versión 4</a>
+        </div>
+      </section>
+    </article>
+
+    <aside class="comentarios">
+      <h2>Comentarios</h2>
+      <div id="disqus_thread"></div>
+      <noscript>Activa JavaScript para ver los comentarios.</noscript>
+    </aside>
   </main>
 
   <footer class="pie">
