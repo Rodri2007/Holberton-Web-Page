@@ -13,9 +13,14 @@
 
   <header class="cabecera">
     <a class="marca" href="index.html">
-      <img src="imagenes\logo2.png" alt="Logo pequeño de RoTech" class="logo-pequeno">
+      <img src="imagenes/logo2.png" alt="Logo pequeño de RoTech" class="logo-pequeno">
       <span>RoTech</span>
     </a>
+    <div class="right compartir">
+      <span>Compartir:</span>
+      <a class="red" id="compartirTwitter" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener">Twitter</a>
+      <a class="red" id="compartirFacebook" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener">Facebook</a>
+    </div>
     <button class="menu-boton" id="menuBoton" aria-label="Abrir menú" aria-expanded="false">Menú</button>
     <nav class="menu" id="menu">
       <a href="index.html">Inicio</a>
@@ -25,30 +30,38 @@
   </header>
 
   <main>
-    <section class="bloque encabezado-pagina">
-      <h1>Características del robot</h1>
-      <p>
-        Estas son las piezas que forman el Super Follower V3, el seguidor de línea
-        del equipo RoTech.
-      </p>
-    </section>
+    <article>
+      <section class="bloque encabezado-pagina">
+        <h1>Características del robot</h1>
+        <p>
+          Estas son las piezas que forman el Super Follower V3, el seguidor de línea
+          del equipo RoTech.
+        </p>
+      </section>
 
-    <section class="dos-columnas">
-      <figure class="figura">
-        <img src="imagenes\robot.png" alt="Foto del robot Super Follower V3">
-        <figcaption>Super Follower V3</figcaption>
-      </figure>
+      <section class="dos-columnas">
+        <figure class="figura">
+          <img src="imagenes/robot.png" alt="Foto del robot Super Follower V3">
+          <figcaption>Super Follower V3</figcaption>
+        </figure>
 
-      <ul class="lista-specs" id="listaSpecs">
-        <li><strong>ESP32-C3</strong><span>Microcontrolador que le da vida.</span></li>
-        <li><strong>Puente H TB6612</strong><span>Driver que entrega potencia hata 10A!.</span></li>
-        <li><strong>Pila de 7.4 V</strong><span>Gran capacidad de descarga para maxima potencia.</span></li>
-        <li><strong>Motores coreless N60</strong><span>Motores ligeros y de respuesta rápida.</span></li>
-        <li><strong>Llantas de 25 mm a 10k rpm </strong><span>Tracción para recorrer la pista a alta velocidad.</span></li>
-        <li><strong>Sensor multiplexado x16</strong><span>Dieciséis sensores para la lectura y ubicar la línea.</span></li>
-        <li><strong>Turbina de 32 mm</strong><span>Ayuda a que el robot se mantenga pegado a la pista.</span></li>
-      </ul>
-    </section>
+        <ul class="lista-specs" id="listaSpecs">
+          <li><strong>ESP32-C3</strong><span>Microcontrolador que controla todo el robot.</span></li>
+          <li><strong>Puente H TB6612</strong><span>Driver que entrega potencia a los motores.</span></li>
+          <li><strong>Pila de 7.4 V</strong><span>Fuente de energía del robot.</span></li>
+          <li><strong>Motores coreless N60</strong><span>Motores ligeros y de respuesta rápida.</span></li>
+          <li><strong>Llantas de 25 mm a 10k rpm</strong><span>Tracción para recorrer la pista a alta velocidad.</span></li>
+          <li><strong>Sensor multiplexado x16</strong><span>Dieciséis puntos de lectura para ubicar la línea.</span></li>
+          <li><strong>Turbina de 32 mm</strong><span>Ayuda a que el robot se mantenga pegado a la pista.</span></li>
+        </ul>
+      </section>
+    </article>
+
+    <aside class="comentarios">
+      <h2>Comentarios</h2>
+      <div id="disqus_thread"></div>
+      <noscript>Activa JavaScript para ver los comentarios.</noscript>
+    </aside>
   </main>
 
   <footer class="pie">
