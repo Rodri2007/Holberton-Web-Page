@@ -238,7 +238,7 @@ a:focus-visible, button:focus-visible {
 
 .texto-version h2 { font-size: 1.8rem; }
 
-
+/* ====== Botones de compartir (Twitter / Facebook) ====== */
 .right {
   margin-left: auto;
   display: flex;
@@ -267,7 +267,7 @@ a:focus-visible, button:focus-visible {
   transform: translateY(-2px);
 }
 
-
+/* ====== Comentarios (Disqus) ====== */
 .comentarios {
   max-width: 760px;
   margin: 24px auto 0;
@@ -280,8 +280,6 @@ a:focus-visible, button:focus-visible {
 #disqus_thread { min-height: 120px; color: var(--gris); }
 
 
-
-
 .pie {
   margin-top: 48px;
   padding: 20px;
@@ -292,7 +290,7 @@ a:focus-visible, button:focus-visible {
 
 .pie p { margin: 0; }
 
-
+/* ====== Celular ====== */
 @media (max-width: 760px) {
   .menu-boton { display: block; }
   .menu {
