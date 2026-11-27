@@ -1,0 +1,268 @@
+/* ====== Variables ====== */
+:root {
+  --papel: #f4f5f2;
+  --tinta: #111111;
+  --gris: #5b5f5c;
+  --borde: #d6d9d4;
+  --acento: #ff5a1f;
+  --blanco: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: "Figtree", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+h1, h2 {
+  font-family: "Chakra Petch", system-ui, sans-serif;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 3px;
+}
+
+/* ====== Cabecera ====== */
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 24px;
+  background: var(--blanco);
+  border-bottom: 4px solid var(--tinta);
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--tinta);
+  text-decoration: none;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.logo-pequeno { width: 40px; height: 40px; object-fit: contain; }
+
+.menu { display: flex; gap: 22px; }
+
+.menu a {
+  color: var(--tinta);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 0;
+  border-bottom: 3px solid transparent;
+}
+
+.menu a:hover,
+.menu a.activo { border-bottom-color: var(--acento); }
+
+.menu-boton {
+  display: none;
+  background: var(--tinta);
+  color: var(--blanco);
+  border: 0;
+  padding: 8px 16px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ====== Portada ====== */
+.portada {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 24px 32px;
+  text-align: center;
+}
+
+.logo-grande {
+  width: min(280px, 70%);
+  margin: 0 auto 24px;
+  object-fit: contain;
+}
+
+.portada h1 { font-size: clamp(2.4rem, 8vw, 4rem); }
+
+.descripcion { color: var(--gris); font-size: 1.2rem; margin: 0 0 20px; }
+
+.nombre-robot {
+  display: inline-block;
+  background: var(--tinta);
+  color: var(--blanco);
+  padding: 8px 20px;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+}
+
+/* Pista: línea negra con el robot avanzando despacio */
+.pista {
+  position: relative;
+  height: 28px;
+  margin: 40px auto 8px;
+  max-width: 560px;
+}
+
+.linea {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--tinta);
+}
+
+.robot-punto {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--acento);
+  border: 3px solid var(--tinta);
+  border-radius: 6px;
+  animation: avanzar 9s ease-in-out infinite alternate;
+}
+
+@keyframes avanzar {
+  from { left: 0; }
+  to   { left: calc(100% - 24px); }
+}
+
+.lema {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* ====== Bloques de texto ====== */
+.bloque {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.bloque h2 { font-size: 1.8rem; }
+
+.encabezado-pagina { padding-top: 48px; padding-bottom: 8px; }
+.encabezado-pagina h1 { font-size: clamp(2rem, 7vw, 3rem); }
+.encabezado-pagina p { color: var(--gris); margin: 0; }
+
+.botones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+
+.boton {
+  display: inline-block;
+  background: var(--acento);
+  color: var(--tinta);
+  border: 3px solid var(--tinta);
+  padding: 10px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s;
+}
+
+.boton:hover { transform: translateY(-2px); }
+
+.boton-claro { background: var(--blanco); }
+
+/* ====== Páginas 2 y 3 ====== */
+.dos-columnas {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.figura { margin: 0; }
+
+.figura img {
+  width: 100%;
+  background: var(--blanco);
+  border: 3px solid var(--tinta);
+  object-fit: contain;
+}
+
+.figura figcaption {
+  margin-top: 8px;
+  color: var(--gris);
+  font-size: 0.95rem;
+}
+
+/* Imagen que no se encontró (la pone el JS) */
+.img-faltante {
+  min-height: 200px;
+  background: var(--blanco);
+  border: 3px dashed var(--gris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+.lista-specs { list-style: none; margin: 0; padding: 0; }
+
+.lista-specs li {
+  background: var(--blanco);
+  border-left: 6px solid var(--acento);
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-specs strong { font-family: "Chakra Petch", sans-serif; font-size: 1.1rem; }
+.lista-specs span { color: var(--gris); font-size: 0.95rem; }
+
+/* Aparición una por una (la activa el JS) */
+.lista-specs li.oculto { opacity: 0; transform: translateX(-16px); }
+.lista-specs li { transition: opacity 0.4s, transform 0.4s; }
+
+.texto-version h2 { font-size: 1.8rem; }
+
+/* ====== Pie ====== */
+.pie {
+  margin-top: 48px;
+  padding: 20px;
+  text-align: center;
+  background: var(--tinta);
+  color: var(--blanco);
+}
+
+.pie p { margin: 0; }
+
+/* ====== Celular ====== */
+@media (max-width: 760px) {
+  .menu-boton { display: block; }
+  .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .menu.abierto { display: flex; }
+  .dos-columnas { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .robot-punto { animation: none; left: 50%; }
+  .lista-specs li { transition: none; }
+}

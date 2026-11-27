@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Características | Super Follower V3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a class="marca" href="index.html">
+      <img src="imagenes\logo2.png" alt="Logo pequeño de RoTech" class="logo-pequeno">
+      <span>RoTech</span>
+    </a>
+    <button class="menu-boton" id="menuBoton" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="version4.html">Versión 4</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bloque encabezado-pagina">
+      <h1>Características del robot</h1>
+      <p>
+        Estas son las piezas que forman el Super Follower V3, el seguidor de línea
+        del equipo RoTech.
+      </p>
+    </section>
+
+    <section class="dos-columnas">
+      <figure class="figura">
+        <img src="imagenes\robot.png" alt="Foto del robot Super Follower V3">
+        <figcaption>Super Follower V3</figcaption>
+      </figure>
+
+      <ul class="lista-specs" id="listaSpecs">
+        <li><strong>ESP32-C3</strong><span>Microcontrolador que controla todo el robot.</span></li>
+        <li><strong>Puente H TB6612</strong><span>Driver que entrega potencia a los motores.</span></li>
+        <li><strong>Pila de 7.4 V</strong><span>Fuente de energía del robot.</span></li>
+        <li><strong>Motores coreless N60</strong><span>Motores ligeros y de respuesta rápida.</span></li>
+        <li><strong>Llantas de 25 mm a 10k rpm</strong><span>Tracción para recorrer la pista a alta velocidad.</span></li>
+        <li><strong>Sensor multiplexado x16</strong><span>Dieciséis puntos de lectura para ubicar la línea.</span></li>
+        <li><strong>Turbina de 32 mm</strong><span>Ayuda a que el robot se mantenga pegado a la pista.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Equipo RoTech &copy; <span id="anio"></span></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

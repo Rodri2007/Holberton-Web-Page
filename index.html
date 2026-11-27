@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equipo RoTech | Super Follower V3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <a class="marca" href="index.html">
+      <img src="imagenes/logo2.png" alt="Logo pequeño de RoTech" class="logo-pequeno">
+      <span>RoTech</span>
+    </a>
+    <button class="menu-boton" id="menuBoton" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="version4.html">Versión 4</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="portada">
+      <img src="imagenes\logo1.png" alt="Logo de RoTech" class="logo-grande">
+      <h1>Equipo RoTech</h1>
+      <p class="descripcion">El robot seguidor de línea de RoTech</p>
+      <h2 class="nombre-robot">Super Follower V3</h2>
+
+      <div class="pista" aria-hidden="true">
+        <div class="linea"></div>
+        <div class="robot-punto"></div>
+      </div>
+      <p class="lema">Avanzando lento pero seguro</p>
+    </section>
+
+    <section class="bloque">
+      <h2>¿Qué es un seguidor de línea?</h2>
+      <p>
+        Es un robot autónomo que recorre una pista siguiendo una línea marcada en el suelo.
+        Sus sensores leen la línea miles de veces por segundo y el control corrige el
+        rumbo de los motores para mantenerse sobre ella, sin que nadie lo maneje.
+      </p>
+      <p>
+        El Super Follower V3 es la tercera versión del robot del equipo RoTech, construida
+        para competir y mejorar en cada prueba.
+      </p>
+      <div class="botones">
+        <a class="boton" href="caracteristicas.html">Ver características</a>
+        <a class="boton boton-claro" href="version4.html">Conocer la versión 4</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Equipo RoTech &copy; <span id="anio"></span></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
